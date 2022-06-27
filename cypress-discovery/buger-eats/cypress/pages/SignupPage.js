@@ -1,5 +1,3 @@
-
-
 class SignupPage {
     go() {
         cy.visit('/')
@@ -38,11 +36,11 @@ class SignupPage {
     }
 
     alertMessageShouldBe(expectedMessage) {
-        //validação do comportamentonpm run
-        cy.get('.alert-error').should('have.text', expectedMessage)
+        //validação do comportamento npm run
+        // cy.get('.alert-error').should('have.text', expectedMessage)
+        cy.contains('.alert-error', expectedMessage).should('be.visible')
     }
 
 
 }
-
-export default new SignupPage;
+export default new SignupPage
