@@ -1,4 +1,4 @@
-import signup from '..pages/signupPage'
+import signupPage from '../pages/SignupPage'
 import signupFactory from '../factories/SignupFactory'
 
 
@@ -10,7 +10,7 @@ describe('Signup', () => {
     //     })
     // })
 
-    it.skip('User should be deliver ', function () {
+    it('User should be deliver ', function () {
 
        var deliver = signupFactory.deliver()
 
@@ -24,7 +24,7 @@ describe('Signup', () => {
 
     })
 
-    it.skip('Incorrect document', function () {
+    it('Incorrect document', function () {
 
         var deliver = signupFactory.deliver()
 
@@ -37,7 +37,7 @@ describe('Signup', () => {
 
     })
 
-    it.skip('Incorrect email', function () {
+    it('Incorrect email', function () {
 
         var deliver = signupFactory.deliver()
 
@@ -52,15 +52,15 @@ describe('Signup', () => {
 
      context('Required fields', function(){
 
-        const messages =[
-            {field: 'name', output: 'É necessário informar o nome'},
-            {field: 'cpf', output: 'É necessário informar o CPF'},
-             {field: 'email', output: 'É necessário informar o e-mail'},
-             {field: 'postalcode', output: 'É necessário informar o CEP'},
-            {field: 'number', output: 'É necessário informar o número do endereço'},
-             {field: 'delivery_method', output: 'Selecione o método de entrega'},
-             {field: 'cnh', output: 'Adicione uma foto da sua CNH'}
-        ]
+         const messages = [
+             { field: 'name', output: 'É necessário informar o nome' },
+             { field: 'cpf', output: 'É necessário informar o CPF' },
+             { field: 'email', output: 'É necessário informar o e-mail' },
+             { field: 'postalcode', output: 'É necessário informar o CEP' },
+             { field: 'number', output: 'É necessário informar o número do endereço' },
+             { field: 'delivery_method', output: 'Selecione o método de entrega' },
+             { field: 'cnh', output: 'Adicione uma foto da sua CNH' }
+         ]
 
          before(function(){
              signup.go()
@@ -70,6 +70,8 @@ describe('Signup', () => {
         messages.forEach(function(msg){
             it(`${msg.field} is required`, function(){
                 signupPage.alertMessageShouldBe(msg.output)
+                // signupPage.alertMessageShouldBe(msg.output)
+                // signupPage.alertMessageShouldBe(msg.output)
              })
          })
      })
