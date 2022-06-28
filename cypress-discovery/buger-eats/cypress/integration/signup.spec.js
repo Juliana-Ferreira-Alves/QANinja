@@ -68,11 +68,9 @@ describe('Signup', () => {
          })
 
         messages.forEach(function(msg){
-            it(`${msg.field} is required`, function(){
+            it(`${msg.field} is required`, function () {
                 signupPage.alertMessageShouldBe(msg.output)
-                // signupPage.alertMessageShouldBe(msg.output)
-                // signupPage.alertMessageShouldBe(msg.output)
-             })
+            })
          })
      })
     
