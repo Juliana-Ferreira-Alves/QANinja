@@ -1,0 +1,57 @@
+{
+    "signup": {
+            "name": "Juliana Alves",
+            "cpf": "00000017488",
+            "email": "analista@gmail.com",
+            "whatsapp": "2199999999",
+
+            "address": {
+                "postalcode": "21361120",
+                "street": "Rua Aracua",
+                "number": "02",
+                "details": "apto 201",
+                "district": "Vaz Lobo",
+                "city_state": "Rio de Janeiro/RJ"
+            },
+
+            "delivery_method": "Moto",
+            "cnh": "cnh-digital.jpg"
+    },
+
+    "cpf_inv": {
+            "name": "Juliana Alves",
+            "cpf": "X000001748A",
+            "email": "jp@gmail.com",
+            "whatsapp": "2199999999",
+
+            "address": {
+                "postalcode": "21361120",
+                "street": "Rua Aracua",
+                "number": "02",
+                "details": "apto 201",
+                "district": "Vaz Lobo",
+                "city_state": "Rio de Janeiro/RJ"
+            },
+
+            "delivery_method": "Moto",
+            "cnh": "cnh-digital.jpg"
+    },
+    "email_inv": {
+            "name": "Juliana Alves",
+            "cpf": "00000017488",
+            "email": "analista.com.br",
+            "whatsapp": "2199999999",
+
+            "address": {
+                "postalcode": "21361120",
+                "street": "Rua Aracua",
+                "number": "02",
+                "details": "apto 201",
+                "district": "Vaz Lobo",
+                "city_state": "Rio de Janeiro/RJ"
+            },
+
+            "delivery_method": "Moto",
+            "cnh": "cnh-digital.jpg"
+    }
+}
