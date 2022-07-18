@@ -1,1 +1,11 @@
-npx cypress run --record --key 2bd4438b-531a-402f-8d1e-cef7b8f8a809
+Conta estudate: npx cypress run --record --key 2bd4438b-531a-402f-8d1e-cef7b8f8a809
+
+Conta Buger-eats: 
+BugerEats
+module.exports = {
+  projectId: "smt2bw"
+  // The rest of the Cypress config options go here...
+}
+
+npx cypress run --record --key ddd52013-7364-432d-972f-dbba35d458e2
+
